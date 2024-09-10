@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M02mob1.MainPage">
+
+    <ScrollView BackgroundColor="Gray">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Rowery"
+                FontSize="40"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                />
+            <Image
+                Source="dotnet_bot.png"
+                WidthRequest="400"
+                x:Name="imgRower"
+                />
+            <Label
+                Text="sesfskd slksldkf sdkjsdflkjsf kjsdksdkfj skdfjsdfsdfkjsfdkdjsdf ksfjds kdfjhfd skjdf skdf skdf skdf sdkfjs fdkjsdfksjdfk sfdjhkhdfzfkxzjkxj xkdfjxdkjfz kdjdf kxjdxkjdf skdjf xkdjfxkjdf "
+                x:Name="lblNapis"
+                />
+            <HorizontalStackLayout Spacing="10">
+                <Button
+                    Text="czerwony"
+                    Clicked="onCzerwonyClicked"
+                    WidthRequest="250"
+                    />
+                <Button
+                    Text="zielony"
+                    Clicked="onZielonyClicked"
+                    WidthRequest="250"
+                   
+                    />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button
+                    Text="włącz 2"
+                    x:Name="btnWlacz1"
+                    Clicked="onWlacz2Clicked"
+                    />
+                <Button
+                    Text="włącz 1"
+                    x:Name="btnWlacz2"
+                    Clicked="onWlacz1Clicked"
+                    IsEnabled="False"
+                    />
+
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button
+                    Text="pokaż obrazek"
+                    Clicked="onPokazClicked"
+                    />
+                <Button
+                    Text="ukryj obrazek"
+                    Clicked="onUkryjClicked"
+                    />
+
+            </HorizontalStackLayout>
+            <Button
+                Text="Ukryj/Pokaż obrazek"
+                Clicked="onPokazUkryj"
+                HorizontalOptions="Center"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
